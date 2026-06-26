@@ -3,58 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <meta name="description" content="Recarga y mantenimiento profesional de extintores en Cali. Servicio 24/7 a domicilio con certificados oficiales."/>
-  <title>EXTINTO | Recarga y Mantenimiento de Extintores Cali</title>
+  <meta name="description" content="Recarga de Extintores Profesional - Mantenimiento, Inspección y Recarga de Extintores en Bogotá y Colombia."/>
+  <title>OXI | Recarga de Extintores</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
-    :root{--red:#ff0000;--dark:#0a0a0a;--gray:#111;}
+    :root{
+      --pink: #ff00aa;
+      --hotpink: #ff1493;
+      --magenta: #e00080;
+      --black: #0a0a0a;
+      --dark: #1a001a;
+    }
     *{margin:0;padding:0;box-sizing:border-box;}
-    body{background:var(--dark);color:#fff;font-family:'Rajdhani',sans-serif;overflow-x:hidden;}
+    body{background:var(--black);color:#fff;font-family:'Rajdhani',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
     h1,h2,h3{font-family:'Orbitron',sans-serif;text-transform:uppercase;}
-    header{position:fixed;top:0;left:0;width:100%;background:rgba(0,0,0,0.95);backdrop-filter:blur(10px);z-index:1000;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--red);flex-wrap:wrap;}
-    .logo{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:900;color:var(--red);letter-spacing:4px;}
-    nav{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;}
-    nav a{color:#fff;text-decoration:none;font-size:clamp(0.9rem,2.5vw,1rem);font-weight:bold;transition:0.3s;}
-    nav a:hover{color:var(--red);text-shadow:0 0 15px var(--red);}
-    .menu-toggle{display:none;font-size:2rem;color:var(--red);cursor:pointer;}
-    @media(max-width:768px){.menu-toggle{display:block;}nav{display:none;width:100%;background:rgba(0,0,0,0.98);padding:20px 0;order:3;}nav.active{display:flex;flex-direction:column;align-items:center;}nav a{margin:10px 0;font-size:1.4rem;}}
-    .whatsapp-fixed{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.4rem;box-shadow:0 0 25px rgba(37,211,102,0.9);z-index:999;animation:pulse 2s infinite;}
-    .hero{min-height:100vh;background:linear-gradient(135deg,#000000,#110000);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:100px 20px 80px;}
-    .hero h1{font-size:clamp(3.5rem,12vw,7rem);background:linear-gradient(90deg,#ff0000,#ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 60px rgba(255,0,0,0.8);animation:glow 2s infinite alternate;line-height:1;}
-    .hero p{font-size:clamp(1.3rem,4vw,2.2rem);margin:20px 0;color:#ff3333;}
-    .hero-buttons{margin-top:50px;display:flex;flex-direction:column;gap:20px;align-items:center;}
-    .btn-hero{padding:18px 40px;font-size:clamp(1.3rem,4vw,1.9rem);font-weight:900;text-transform:uppercase;border:4px solid var(--red);color:white;border-radius:8px;transition:all 0.4s;min-width:280px;width:90%;max-width:400px;text-align:center;}
-    .btn-hero:hover{background:var(--red);box-shadow:0 0 40px var(--red);transform:scale(1.05);}
-    .btn-hero.whatsapp{background:#25D366;border-color:#25D366;}
-    section{padding:80px 5%;text-align:center;}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:50px;}
-    .card{background:#111;padding:40px 20px;border:2px solid #333;transition:0.4s;}
-    .card:hover{border-color:var(--red);box-shadow:0 0 30px rgba(255,0,0,0.5);transform:translateY(-10px);}
-    .card i{font-size:3.5rem;color:var(--red);margin-bottom:20px;}
-    #particles-js{position:absolute;width:100%;height:100%;top:0;left:0;}
-    .scanline{position:absolute;top:0;width:100%;height:3px;background:linear-gradient(transparent,rgba(255,0,0,0.3));animation:scan 8s linear infinite;pointer-events:none;}
-    @keyframes glow{from{text-shadow:0 0 30px #ff0000;}to{text-shadow:0 0 80px #ff0000;}}
-    @keyframes scan{0%{transform:translateY(-100%);}100%{transform:translateY(100vh);}}
-    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.8);}70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}}
-    footer{background:#000;padding:40px 20px 60px;text-align:center;font-size:0.9rem;color:#666;border-top:1px solid #333;}
-    footer a{color:#888;text-decoration:none;margin:0 10px;}
-    footer a:hover{color:var(--red);}
+
+    header{
+      position:fixed;top:0;left:0;width:100%;background:rgba(10,10,10,0.97);backdrop-filter:blur(12px);z-index:1000;
+      padding:15px 5%;display:flex;justify-content:space-between;align-items:center;
+      border-bottom:3px solid var(--pink);box-shadow:0 0 20px var(--pink);
+    }
+    .logo{
+      font-size:clamp(2rem,6vw,3rem);font-weight:900;
+      background:linear-gradient(90deg,var(--pink),var(--hotpink),#ff69b4);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      letter-spacing:6px;
+      text-shadow:0 0 30px var(--pink);
+    }
+    nav{display:flex;gap:20px;flex-wrap:wrap;}
+    nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:1.1rem;transition:0.4s;}
+    nav a:hover{color:var(--pink);text-shadow:0 0 20px var(--pink);transform:translateY(-3px);}
+
+    .menu-toggle{display:none;font-size:2.2rem;color:var(--pink);cursor:pointer;}
+
+    .whatsapp-fixed{
+      position:fixed;bottom:25px;right:25px;background:var(--hotpink);color:white;
+      width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      font-size:2.8rem;box-shadow:0 0 40px var(--hotpink);animation:pulse-pink 2s infinite;
+    }
+
+    .hero{
+      min-height:100vh;background:linear-gradient(135deg,#000,#1a001a);
+      display:flex;align-items:center;justify-content:center;text-align:center;position:relative;
+      padding:120px 20px 80px;overflow:hidden;
+    }
+    .hero h1{
+      font-size:clamp(4rem,14vw,9rem);font-weight:900;letter-spacing:12px;
+      background:linear-gradient(90deg,var(--pink),var(--hotpink),#ff69b4,var(--pink));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      background-size:300%;animation:neonFlow 5s linear infinite, glitch 4s infinite;
+      text-shadow:0 0 20px var(--pink),0 0 40px var(--hotpink),0 0 80px var(--pink);
+    }
+    .hero p{
+      font-size:clamp(1.4rem,4vw,2.4rem);margin:30px 0;
+      color:var(--hotpink);text-shadow:0 0 20px var(--hotpink);animation:pulse 3s infinite;
+    }
+    .hero-buttons{margin-top:60px;display:flex;flex-direction:column;gap:25px;align-items:center;}
+    .btn-hero{
+      padding:18px 50px;font-size:1.8rem;font-weight:900;text-transform:uppercase;
+      border:4px solid var(--pink);color:var(--pink);background:transparent;
+      min-width:300px;border-radius:12px;transition:all 0.5s;box-shadow:0 0 30px var(--pink);
+    }
+    .btn-hero:hover{
+      background:var(--pink);color:#000;transform:scale(1.08);
+      box-shadow:0 0 60px var(--pink), 0 0 100px var(--hotpink);
+    }
+    .btn-hero.whatsapp{background:var(--hotpink);border-color:var(--hotpink);color:#000;}
+
+    /* ==================== SECCIÓN SERVICIOS ==================== */
+    .services{
+      padding:100px 5% 120px;
+      background:linear-gradient(135deg, #0a0a0a, #1a001a);
+      position:relative;
+      overflow:hidden;
+    }
+    .services::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:4px;
+      background:linear-gradient(90deg,transparent,var(--pink),var(--hotpink),var(--pink),transparent);
+    }
+    .section-title{
+      text-align:center;margin-bottom:70px;
+    }
+    .section-title h2{
+      font-size:clamp(2.8rem,8vw,4.5rem);font-weight:900;
+      background:linear-gradient(90deg,var(--pink),var(--hotpink),#ff1493);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      text-shadow:0 0 40px var(--pink);
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+      gap:25px;
+      max-width:1400px;
+      margin:0 auto;
+    }
+    .service-card{
+      background:rgba(30,10,30,0.7);
+      border:2px solid rgba(255,20,147,0.3);
+      border-radius:15px;
+      padding:35px 25px;
+      transition:all 0.4s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    .service-card::before{
+      content:'';position:absolute;top:-50%;left:-50%;width:60%;height:60%;
+      background:radial-gradient(circle, rgba(255,20,147,0.2) 0%, transparent 70%);
+      opacity:0;transition:all 0.5s;
+    }
+    .service-card:hover{
+      transform:translateY(-15px);
+      border-color:var(--hotpink);
+      box-shadow:0 0 40px var(--hotpink);
+    }
+    .service-card:hover::before{opacity:1;top:-20%;left:-20%;}
+
+    .service-card h3{
+      font-size:1.55rem;margin-bottom:15px;color:var(--pink);
+      text-shadow:0 0 15px var(--pink);
+    }
+    .service-card p{
+      color:#ccc;line-height:1.6;font-size:1.05rem;
+    }
+    .service-card .ver-mas{
+      display:inline-block;margin-top:20px;
+      color:var(--hotpink);font-weight:bold;text-decoration:none;
+      transition:0.3s;
+    }
+    .service-card .ver-mas:hover{
+      color:#ff69b4;text-shadow:0 0 15px #ff69b4;
+    }
+
+    #particles-js{position:absolute;width:100%;height:100%;top:0;left:0;z-index:1;}
+    .scanline{
+      position:absolute;top:0;width:100%;height:4px;
+      background:linear-gradient(transparent,var(--pink,0.4),transparent);
+      animation:scan 7s linear infinite;pointer-events:none;z-index:2;
+    }
+
+    footer{
+      background:#000;padding:50px 20px 70px;text-align:center;color:#555;
+      border-top:1px solid #222;position:relative;z-index:10;
+    }
+    footer a{color:var(--pink);text-decoration:none;margin:0 15px;transition:0.3s;}
+    footer a:hover{color:var(--hotpink);text-shadow:0 0 15px var(--hotpink);}
+
+    @keyframes neonFlow{0%{background-position:0%}100%{background-position:300%}}
+    @keyframes glitch{
+      0%,100%{transform:translate(0);}
+      20%{transform:translate(-8px,8px);clip-path:polygon(0 0,100% 0,100% 20%,0 20%);}
+      40%{transform:translate(8px,-8px);clip-path:polygon(0 80%,100% 80%,100% 100%,0 100%);}
+      60%{transform:translate(-8px,0);}
+      80%{transform:translate(8px,8px);}
+    }
+    @keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(100vh)}}
+    @keyframes pulse{0%,100%{opacity:0.6}50%{opacity:1}}
+    @keyframes pulse-pink{0%,100%{box-shadow:0 0 0 0 rgba(255,20,147,0.7)}70%{box-shadow:0 0 0 25px rgba(255,20,147,0)}}
+
+    @media(max-width:768px){
+      .menu-toggle{display:block;}
+      nav{display:none;flex-direction:column;width:100%;background:rgba(10,10,10,0.98);padding:30px 0;position:absolute;top:100%;left:0;}
+      nav.active{display:flex;}
+      nav a{font-size:1.6rem;margin:15px 0;}
+      .hero h1{letter-spacing:6px;}
+      .services{padding:80px 5% 90px;}
+    }
   </style>
 </head>
 <body>
-  <a href="https://wa.me/573189411374" class="whatsapp-fixed" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/573189411374" class="whatsapp-fixed" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <header>
-    <div class="logo">EXTINTO</div>
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</div>
+    <div class="logo">OXI</div>
+    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+      ☰
+    </div>
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
-      <a href="#cobertura">Cobertura</a>
-      <a href="#por-que">Por qué Nosotros</a>
+      <a href="#acceso">Acceso</a>
+      <a href="#cyber">Clientes</a>
+      <a href="#drop">Tienda</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -62,68 +201,54 @@
   <section class="hero" id="inicio">
     <div id="particles-js"></div>
     <div class="scanline"></div>
-    <div>
-      <h1>EXTINTO</h1>
-      <p>Recarga y Mantenimiento Profesional de Extintores<br><strong>24/7 en Cali y alrededores</strong></p>
+
+    <div style="position:relative;z-index:10;">
+      <h1>RECARGA</h1>
+      <p>Extintores • Mantenimiento • Seguridad contra Incendios<br>Protección profesional que salva vidas.</p>
       <div class="hero-buttons">
-        <a href="#contacto" class="btn-hero">Solicitar Servicio Ahora</a>
-        <a href="https://wa.me/573189411374" target="_blank" class="btn-hero whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Directo</a>
+        <a href="#servicios" class="btn-hero">Ver Servicios</a>
+        <a href="https://wa.me/573189411374" target="_blank" class="btn-hero whatsapp">Whatsapp directo</a>
       </div>
     </div>
   </section>
 
-  <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="grid">
-      <div class="card">
-        <i class="fas fa-fire-extinguisher"></i>
+  <!-- ==================== SECCIÓN SERVICIOS ==================== -->
+  <section class="services" id="servicios">
+    <div class="section-title">
+      <h2>Nuestros Servicios de Extintores</h2>
+      <p style="color:#aaa;margin-top:15px;font-size:1.3rem;">Soluciones completas en seguridad contra incendios</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
         <h3>Recarga de Extintores</h3>
-        <p>Todo tipo: PQS, CO₂, Agua, Espuma y Clase K. Recarga completa y sellado.</p>
+        <p>Recarga profesional de extintores de polvo químico, CO₂, agua, espuma y halón. Cumplimos con normas técnicas vigentes.</p>
       </div>
-      <div class="card">
-        <i class="fas fa-tools"></i>
-        <h3>Mantenimiento Anual</h3>
-        <p>Inspección, prueba hidrostática, cambio de válvulas y sellos según normas vigentes.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-certificate"></i>
-        <h3>Certificados Oficiales</h3>
-        <p>Cumplimos NTC 3668, ICONTEC y requisitos de Bomberos. Documentación legal.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-truck"></i>
-        <h3>Servicio a Domicilio</h3>
-        <p>Atención rápida en toda Cali y zona metropolitana.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="cobertura" style="background:#111;">
-    <h2>Zona de Cobertura</h2>
-    <p>Servicio rápido en toda la ciudad</p>
-    <div class="grid">
-      <div class="card"><i class="fas fa-map-marker-alt"></i><h3>Cali</h3><p>Cobertura total</p></div>
-      <div class="card"><i class="fas fa-map-marker-alt"></i><h3>Jamundí y Yumbo</h3><p>Servicio completo</p></div>
-      <div class="card"><i class="fas fa-map-marker-alt"></i><h3>Alrededores</h3><p>Con coordinación previa</p></div>
-    </div>
-  </section>
+      <div class="service-card">
+        <h3>Mantenimiento Preventivo</h3>
+        <p>Inspección, limpieza, prueba hidrostática y mantenimiento anual o semestral según norma NTC 2013.</p>
+      </div>
 
-  <section id="por-que">
-    <h2>¿Por qué Elegir EXTINTO?</h2>
-    <div class="grid">
-      <div class="card"><i class="fas fa-clock"></i><h3>24/7 Emergencias</h3><p>Atendemos cualquier día y hora</p></div>
-      <div class="card"><i class="fas fa-shield-alt"></i><h3>Cumplimiento Normativo</h3><p>Procesos 100% legales y certificados</p></div>
-      <div class="card"><i class="fas fa-thumbs-up"></i><h3>Técnicos Certificados</h3><p>Experiencia y materiales de calidad</p></div>
-      <div class="card"><i class="fas fa-handshake"></i><h3>Garantía</h3><p>1 año en recargas y mantenimiento</p></div>
-    </div>
-  </section>
+      <div class="service-card">
+        <h3>Inspección y Certificación</h3>
+        <p>Inspección técnica detallada y certificación oficial de extintores para empresas y hogares.</p>
+      </div>
 
-  <section id="contacto" style="background:#111;">
-    <h2>Contáctanos Ahora</h2>
-    <p>Respuesta inmediata vía WhatsApp</p>
-    <div class="hero-buttons" style="margin-top:40px;">
-      <a href="https://wa.me/573189411374" target="_blank" class="btn-hero whatsapp"><i class="fab fa-whatsapp"></i> 318 941 1374</a>
-      <a href="tel:+573189411374" class="btn-hero">Llamar Ahora</a>
+      <div class="service-card">
+        <h3>Venta de Extintores Nuevos</h3>
+        <p>Extintores de todas las capacidades y tipos: ABC, BC, CO₂, extintores automáticos y especiales.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Recarga a Domicilio / Empresa</h3>
+        <p>Servicio de recarga y mantenimiento en sitio para empresas, industrias, edificios y residencias.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Señalización y Equipos de Emergencia</h3>
+        <p>Venta e instalación de señalética de seguridad, gabinetes, mangueras, hidrantes y kits de emergencia.</p>
+      </div>
     </div>
   </section>
 
@@ -131,26 +256,44 @@
   <script>
     particlesJS("particles-js", {
       particles: {
-        number: { value: window.innerWidth < 768 ? 60 : 120 },
-        color: { value: "#ff0000" },
-        shape: { type: "circle" },
-        opacity: { value: 0.6, random: true },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#ff0000", opacity: 0.3, width: 1 },
-        move: { enable: true, speed: 2 }
+        number: { value: window.innerWidth < 768 ? 60 : 110 },
+        color: { value: ["#ff00aa", "#ff1493", "#e00080", "#ff69b4"] },
+        shape: { type: ["circle", "triangle", "star"] },
+        opacity: { value: 0.7, random: true, anim: { enable: true, speed: 1 } },
+        size: { value: 4, random: true },
+        line_linked: {
+          enable: true,
+          distance: 170,
+          color: "#ff1493",
+          opacity: 0.35,
+          width: 1.5
+        },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "none",
+          random: true,
+          attract: { enable: true, rotateX: 600, rotateY: 1200 }
+        }
       },
       interactivity: {
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 140 },
+          push: { particles_nb: 10 }
+        }
       },
       retina_detect: true
     });
   </script>
 
   <footer>
-    <p><a href="https://wa.me/573189411374">WhatsApp: +57 318 941 78954</a> | <a href="tel:+573189411374">Tel: +57 318 941 1374</a></p>
-    <p>Servicio Profesional de Extintores en Cali</p>
-    <p><a href="politica-privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos y Condiciones</a></p>
-    <p>© 2026 EXTINTO – Todos los derechos reservados</p>
+    <p><a href="https://wa.me/573189411374">WhatsApp: +57 318 941 1374</a> • 2025</p>
+    <p>© 2025 OXI – Recarga Profesional de Extintores • Seguridad contra Incendios</p>
   </footer>
+
 </body>
 </html>
